@@ -1,0 +1,18 @@
+pip install virtualenv 下载virtualenv虚拟环境
+
+# 创建虚拟环境
+
+
+virtualenv -p /usr/bin/python3.5 env3.5 指 定python版本  虚拟环境名
+
+
+# 激活环境
+
+
+
+
+
+
+
+
+source env3.5/bin/activ
