@@ -1,18 +1,99 @@
+
+#下载victualenv
 pip install virtualenv 下载virtualenv虚拟环境
 
 # 创建虚拟环境
-
-
-virtualenv -p /usr/bin/python3.5 env3.5 指 定python版本  虚拟环境名
-
+virtualenv -p /usr/bin/python3.5 env3.5 指定python版本  虚拟环境名
 
 # 激活环境
+source env3.5/bin/activate
+
+# 查看环境中的安装包
+pip list
+
+# 退出环境
+deactivate
+
+# git操作
+
+# git init 初始化一个仓库
+
+# git add . 对仓库所有的文件进行跟踪
+
+# git commit -m '提交信息'
+
+# git status -v  '仓库所有状态'
+
+# git config --global user.name 'chumpliang'
+# git config --global user.email 'humorliang@163.com'
+
+# git push -u origin master 进行远程仓库推送
+
+# git clone [github仓库地址]
+
+# github连接
+
+# 本地生成密钥
+ssh-keygen -t rsa -C 'github邮箱'
+-t:指定密钥类型 默认rsa
+-C: 注释文字 如邮箱
+生成密钥文件id_rsa和id_rsa.pub
+
+# ssh -T git@github.com 测试是否连接成功
 
 
+# Django 安装
+pip install django
+
+# 创建项目和APP
+# 项目创建
+django-admin.py startproject my_blog
+
+tree my_blog # 打印树形文件结构
+
+# 建立Django app
+# 创建一个blogapp
+python manage.py startapp blogApp
+python manage.py [options] 使用管理器管理服务 -h 帮助文档
+optins选项：
+[auth]
+    changepassword
+    createsuperuser
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations  再次运行同步数据库
+    migrate  同步数据库
+    sendtestemail
+    shell 交互式shell来进行数据库的增删改差
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[sessions]
+    clearsessions
+
+[staticfiles]
+    collectstatic
+    findstatic
+    runserver 开启服务设备
 
 
-
-
-
-
-source env3.5/bin/activ
